@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var perimetro = 2 * (base + altura);
         document.getElementById('respuestaPrograma5').textContent = 'El area del rectangulo es: ' + area + 
         ' y su perimetro es: ' + perimetro;
+        var znr = document.getElementById('znr');
+        znr.style.height = altura + 'cm';
+        znr.style.width = base + 'cm';
+        znr.style.display = 'block';
+
     });
 
 
