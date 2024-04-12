@@ -16,6 +16,17 @@
                 <li><a href="#programa3">Programa 3</a></li>
                 <li><a href="#programa4">Programa 4</a></li>
                 <li><a href="#programa5">Programa 5</a></li>
+                <li><a href="#programa6">Programa 6</a></li>
+                <li><a href="#programa7">Programa 7</a></li>
+                <li><a href="#programa8">Programa 8</a></li>
+                <li><a href="#programa9">Programa 9</a></li>
+                <li><a href="#programa10">Programa 10</a></li>
+                <li><a href="#programa11">Programa 11</a></li>
+                <li><a href="#programa12">Programa 12</a></li>
+                <li><a href="#programa13">Programa 13</a></li>
+                <li><a href="#programa14">Programa 14</a></li>
+                <li><a href="#programa15">Programa 15</a></li>
+                <li><a href="#programa16">Programa 16</a></li>
             </ul>
         </nav>
     </header>
@@ -121,13 +132,429 @@
                 </div>
                 <p id="respuestaPrograma5"></p>
             </article>
+            <article id="programa6" class = "programa">
+                <div id="cuerpoPrograma">
+                    <h2>Programa 6 (Perimetro y Area de un triangulo)</h2>
+                    <p>Este programa calcula el area y el perimetro de un triangulo recangulo dado el base <br>
+                    y la altura por el usuario</p>
+                    <p>La operacion realizada por el programa sera <br>
+                    Area = B x H / 2 <br>
+                    Perimetro = B + B + B</p>
+                    <h4>Diagrama de flujo</h4>
+                    <img id="diagrama6" src="imagenes/Diagrama6.png" alt="diagrama de flujo 6" class="diagramas">
+                    <form id="formPrograma6">
+                        <label for="baseTriangulo">Base:</label>
+                        <input type="number" name="baseTriangulo" id="baseTriangulo">
+                        <label for="alturaTriangulo">Altura:</label>
+                        <input type="number" name="alturaTriangulo" id="alturaTriangulo">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma6">
+                    <div id="areaTriangulo"></div>
+                    <div id="dibujoTriangulo"></div>
+                </div>
+            </article>
+            <article id="programa7" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2> Programa 7 (Dinosaurios)</h2>
+                    <p>Este programa recibira los datos (Nombre, peso en libras, distancia en pies) introducidos por el usuario
+                        y el programa calculara el peso en kilogramos y la distancia en metros</p>
+                    <p>La operacion realizada por el programa sera <br>
+                        Peso en kilogramos = Peso en libras / 2.2046 <br>
+                        Distancia en metros = Distancia en pies / 3.2808</p>
+                    <h4>Diagrama de flujo</h4>
+                    <img id="diagrama7" src="imagenes/Diagrama7.png" alt="diagrama de flujo 7" class="diagramas">
+                    <form id="formPrograma7">
+                        <label for="nombreDino">Nombre:</label>
+                        <input type="text" name="nombreDino" id="nombreDino">
+                        <label for="pesoDino">Peso en libras:</label>
+                        <input type="number" name="pesoDino" id="pesoDino">
+                        <label for="distanciaDino">Distancia en pies:</label>
+                        <input type="number" name="distanciaDino" id="distanciaDino">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma7">
+                    <div id="dinoCorregido"></div>
+                </div>
+            </article>
+            <article id="programa8" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 8 (gasolinas)</h2>
+                    <p>Una gasolinera tiene un problema en el que ellos ingresan la cantidad de gasolina en 
+                        galones pero el precio de la gasolina esta fijado en litros, resuelte su problema </p>
+                    <p>La operacion realizada por el programa sera <br>
+                        cantidad en litros = cantidad en galones * 3.7854
+                        precio = cantidad en litros * 22
+                    </p>
+                    <h4>Diagrama de flujo</h4>
+                    <img  id="diagrama8" src="imagenes/Diagrama8.png" alt="diagrama de flujo 8" class="diagramas">
+                    <form id="formPrograma8">
+                        <label for="cantidadGalones">Cantidad en galones:</label>
+                        <input type="number" name="cantidadGalones" id="cantidadGalones">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma8">
+                    <div id="precioGasolina"></div>
+                </div>
+            </article>
+            <article id="programa9" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 9 (Volumen de un Cilinro)</h2>
+                    <p>Programa que calcula el volumen de un cilindro dados el radio y la altura <br>
+                    El usuario tiene que otorgar el valor del radio y la altura</p>
+                    <p>La operacion realizada por el programa sera <br>
+                     Pi * r^2 * H
+                    </p>
+                    <h4>Diagrama de flujo</h4>
+                    <img id="diagrama9" src="imagenes/Diagrama9.png" alt="Diagrama de flujo 9" class="diagramas">
+                    <form id="formPrograma9">
+                        <label for="valorRadio">Radio: </label>
+                        <input type="number" name="valorRadio" id="valorRadio">
+                        <label for="valorAltura">Altura: </label>
+                        <input type="number" name="valorAltura" id="valorAltura">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma9">
+                    <div id="volumen"></div>
+                </div>
+            </article>
+            <article id="programa10" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 10 (segundos de dias)</h2>
+                    <p>Programa que dado un numero determinado de dias otorgue la cantidad <br>
+                    de segundos
+                    </p>
+                    <p>La operacion realizada sera: <br>
+                    segs = dias * 86400</p>
+                    <h4>Diagrama de flujo</h4>
+                    <img id="diagrama10" src="imagenes/Diagrama10.png" alt="diagrama de flujo 10" class="diagramas">
+                    <form id="formPrograma10">
+                        <label for="numDias">Cantidad de dias: </label>
+                        <input type="number" name="numDias" id="numDias">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma10">
+                    <div id="cantSegundos"></div>
+                </div>
+            </article>
+            <article id="programa11" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 11 (Triangulo Raro)</h2>
+                    <p>Programa que calcula el area de un traingulo en base a sus 3 lados</p>
+                    <p>La operacion realizada por el programa sera: </p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama11" src="imagenes/Diagrama11.png" alt="diagrama de glujo 11" class="diagramas">
+                    <form id="formPrograma11">
+                        <label for="Lado1">Lado 1: </label>
+                        <input type="number" name="Lado1" id="Lado1">
+                        <label for="Lado2">Lado 1: </label>
+                        <input type="number" name="Lado2" id="Lado2">
+                        <label for="Lado3">Lado 3: </label>
+                        <input type="number" name="Lado3" id="Lado3">
+                        <button type="submit">calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma11">
+                    <div id="area"></div>
+                </div>
+            </article>
+            <article id="programa12" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Cuerpo Programa</h2>
+                    <p>Programa que calculara la distancia entre dos puntos (x1,x2) (y1, y2)</p>
+                    <p>El usuario tendra que ingresar ambos valores (x, y)</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama12" src="imagenes/Diagrama12.png" alt="diagrama de flujo 12" class="diagramas">
+                    <form id="formPrograma12">
+                        <label for="x1">X1: </label>
+                        <input type="number" name="x1" id="x1">
+                        <label for="y1">Y1: </label>
+                        <input type="number" name="y1" id="y1">
+                        <label for="x2">X2: </label>
+                        <input type="number" name="x2" id="x2">
+                        <label for="y2">Y2: </label>
+                        <input type="number" name="y2" id="y2">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma12">
+                    <div id="distancia"></div>
+                </div>
+            </article>
+            <article id="programa13" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 13 (area y perimetro de un circulo)</h2>
+                    <p>Programa que calcula el area y perimetro de un circulo en base a su radio</p>
+                    <p>El usuario tendra que ingresar el radio del circulo</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama13" src="imagenes/Diagrama13.png" alt="diagrama de flujo 13" class="diagramas">
+                    <form id="formPrograma13">
+                        <label for="radioCirculo">Radio: </label>
+                        <input type="number" name="radioCirculo" id="radioCirculo">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma13">
+                    <div id="areaCirculo"></div>
+                    <div id="perimetroCirculo"></div>
+                </div>
+            </article>
+            <article id="programa14" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa14 (Aprobaste o no)</h2>
+                    <p>programa en el que ingresas una calificacion y si es mas de 8 pasas</p>
+                    <p>El usuario tendra que ingresar la calificacion</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama14" src="imagenes/Diagrama14.png" alt="diagrama de flujo 14" class="diagramas">
+                    <form id="formPrograma14">
+                        <label for="calificacion">Calificacion: </label>
+                        <input type="number" name="calificacion" id="calificacion">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma14">
+                    <div id="aprobado"></div>
+                </div>
+            </article>
+            <article id="programa15" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 15 (Sueldo)</h2>
+                    <p>Dado el sueldo de un trabajador, aplique un aumento de 15% si su sueldo es menos a mil <br>
+                    En caso de, imprima el nuevo sueldo del trabajador</p>
+                    <p>El usuario tendra que ingresar el sueldo del trabajador</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama15" src="imagenes/Diagrama15.png" alt="diagrama de flujo 15" class="diagramas">
+                    <form id="formPrograma15">
+                        <label for="sueldo">Sueldo: </label>
+                        <input type="number" name="sueldo" id="sueldo">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma15">
+                    <div id="nuevoSueldo"></div>
+                </div>
+            </article>
+            <article id="programa16" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa16 (Grillometro)</h2>
+                    <p>Existe una formula para calcular la termperatura en base a los sonidos emitidos por minuto de un grillo <br>
+                    haga un programa que realice la operacion de la formula</p>
+                    <p>El usuario tendra que ingresar los sonidos emitidos por minuto</p>
+                    <p>la formula para calcular la temperatura es: </p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama16" src="imagenes/Diagrama16.png" alt="diagrama de flujo 16" class="diagramas">
+                    <form id="formPrograma16">
+                        <label for="sonidos">Sonidos emitidos por minuto: </label>
+                        <input type="number" name="sonidos" id="sonidos">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma16">
+                    <div id="temperatura"></div>
+                </div>
+            </article>
+            <article id="programa17" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa17</h2>
+                    <p>construya un diagrama de fujo tal que dado como datos valores enteros P y Q, determine si: <br>
+                        P^3 + Q^4 - 2 * P^2 &lt; 680 </p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama17" src="imagenes/Diagrama17.png" alt="diagrama de flujo 17" class="diagramas">
+                    <form id="formPrograma17">
+                        <label for="valorP">Valor P: </label>
+                        <input type="number" name="valorP" id="valorP">
+                        <label for="valorQ">Valor Q: </label>
+                        <input type="number" name="valorQ" id="valorQ">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestoPrograma17">
+                    <div id="valor"></div>
+                </div>       
+            </article>
+            <article id="programa18" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa18</h2>
+                    <p>Este programa aplica la formula general a los valores A, B, C</p>
+                    <p>El usuario tendra que ingresar los valores de A, B, C</p>
+                    <p>La formula general es: </p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama18" src="imagenes/Diagrama18.png" alt="diagrama de flujo 18" class="diagramas">
+                    <form id="formPrograma18">
+                        <label for="valorA">Valor A: </label>
+                        <input type="number" name="valorA" id="valorA">
+                        <label for="valorB">Valor B: </label>
+                        <input type="number" name="valorB" id="valorB">
+                        <label for="valorC">Valor C: </label>
+                        <input type="number" name="valorC" id="valorC">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma18">
+                    <div id="respuesta1"></div>
+                    <div id="respuesta2"></div>
+                </div>
+            </article>
+            <article id="programa19" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa19(Division de dos numeros)</h2>
+                    <p>Este programa realiza la division de dos numeros dados por el usuario</p>
+                    <p>El usuario tendra que ingresar los valores de A y B</p>
+                    <p>La operacion realizada por el programa sera: </p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama19" src="imagenes/Diagrama19.png" alt="diagrama de flujo 19" class="diagramas">
+                    <form id="formPrograma19">
+                        <label for="valorA">Valor A: </label>
+                        <input type="number" name="valorA" id="valorA">
+                        <label for="valorB">Valor B: </label>
+                        <input type="number" name="valorB" id="valorB">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma19">
+                    <div id="resultado"></div>
+                </div>
+            </article>
+            <article id="programa20" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa20(Impuesto a sueldo)</h2>
+                    <p>Programa que calcula el impuesto de un trabajador <br>
+                    si su sueldo es mayor o igual a 500, aplica un iva del 16%, en caso contrario su sueldo queda intacto</p>
+                    <p>El usuario tendra que ingresar el sueldo del trabajador</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama20" src="imagenes/Diagrama20.png" alt="diagrama de flujo 20" class="diagramas">
+                    <form id="formPrograma20">
+                        <label for="sueldo">Sueldo: </label>
+                        <input type="number" name="sueldo" id="sueldo">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma20">
+                    <div id="sueldoFinal"></div>
+                </div>
+            </article>
+            <article id="programa21" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>PRograma 21 (Aprobaste o no?)</h2>
+                    <p>Programa que calcula si un alumno aprobo o no en base a su calificacion</p>
+                    <p>El usuario tendra que ingresar la calificacion del alumno</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama21" src="imagenes/Diagrama21.png" alt="diagrama de flujo 21" class="diagramas">
+                    <form id="formPrograma21">
+                        <label for="calificacion">Calificacion: </label>
+                        <input type="number" name="calificacion" id="calificacion">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma21">
+                    <div id="estado"></div>
+                </div>
+            </article>
+            <article id="programa22" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa22 (aumentos de sueldo)</h2>
+                    <p>Programa que dado el sueldo de un trabajador aplica un aumento del 15% si su sueldo es inferior a 1000 <br>
+                    En caso contrario aplica un aumento del 12%</p>
+                    <p>El usuario tendra que ingresar el sueldo del trabajador</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama22" src="imagenes/Diagrama22.png" alt="diagrama de flujo 22" class="diagramas">
+                    <form id="formPrograma22">
+                        <label for="sueldo">Sueldo: </label>
+                        <input type="number" name="sueldo" id="sueldo">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma22">
+                    <div id="nuevoSueldo"></div>
+                </div>
+            </article>
+            <article id="programa23" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa 23(Temperatura en base a grillo)</h2>
+                    <p>Programa que calcula la temperatura en base a los sonidos emitidos por minuto de un grillo</p>
+                    <p>El usuario tendra que ingresar los sonidos emitidos por minuto</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama23" src="imagenes/Diagrama23.png" alt="diagrama de flujo 23" class="diagramas">
+                    <form id="formPrograma23">
+                        <label for="sonidos">Sonidos emitidos por minuto: </label>
+                        <input type="number" name="sonidos" id="sonidos">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma23">
+                    <div id="temperatura"></div>
+                </div>
+            </article>
+            <article id="programa24" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa24 (aprobaste el semestre?)</h2>
+                    <p>Programa que calcula si un alumno aprobo el semestre en base a su calificacion</p>
+                    <p>El usuario tendra que ingresar la calificacion de las 5 unidades del alumno</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama24" src="imagenes/Diagrama24.png" alt="diagrama de flujo 24" class="diagramas">
+                    <form id="formPrograma24">
+                        <label for="unidad1">Unidad 1: </label>
+                        <input type="number" name="unidad1" id="unidad1">
+                        <label for="unidad2">Unidad 2: </label>
+                        <input type="number" name="unidad2" id="unidad2">
+                        <label for="unidad3">Unidad 3: </label>
+                        <input type="number" name="unidad3" id="unidad3">
+                        <label for="unidad4">Unidad 4: </label>
+                        <input type="number" name="unidad4" id="unidad4">
+                        <label for="unidad5">Unidad 5: </label>
+                        <input type="number" name="unidad5" id="unidad5">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma24">
+                    <div id="estado"></div>
+                </div>
+            </article>
+            <article id="programa25" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa25 (Es positivo o negativo?)</h2>
+                    <p>Programa que calcula si un numero es positivo o negativo</p>
+                    <p>El usuario tendra que ingresar el numero</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama25" src="imagenes/Diagrama25.png" alt="diagrama de flujo 25" class="diagramas">
+                    <form id="formPrograma25">
+                        <label for="numero">Numero: </label>
+                        <input type="number" name="numero" id="numero">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma25">
+                    <div id="estado"></div>
+                </div>
+            </article>
+            <article id="programa26" class="programa">
+                <div class="cuerpoPrograma">
+                    <h2>Programa26 (descuentos)</h2>
+                    <p>Programa que efectua descuentos a productos en base a su valor</p>
+                    <p>Si el monto es menor a $500 no hay descuento</p>
+                    <p>Si el monto es mayor a $500 y menor a $1000 se aplica un descuento del 5%</p>
+                    <p>Si el monto es mayor a $1000 y menor a $7000 se aplica un descuento del 11%</p>
+                    <p>Si el monto es mayor a $7000 y menor a $15000 se aplica un descuento del 18%</p>
+                    <p>Si el monto es mayor a $15000 se aplica un descuento del 25%</p>
+                    <p>El usuario tendra que ingresar el monto del producto</p>
+                    <h4>Diagrama de Flujo</h4>
+                    <img id="diagrama26" src="imagenes/Diagrama26.png" alt="diagrama de flujo 26" class="diagramas">
+                    <form id="formPrograma26">
+                        <label for="monto">Monto: </label>
+                        <input type="number" name="monto" id="monto">
+                        <button type="submit">Calcular</button>
+                    </form>
+                </div>
+                <div id="respuestaPrograma26">
+                    <div id="montoFinal"></div>
+                </div>
+            </article>
         </section>
-        <section id="pagina2">
-            <article></article>
-        </section>
-
-
-
     </main>
     <footer>
 

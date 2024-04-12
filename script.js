@@ -58,6 +58,34 @@ document.addEventListener('DOMContentLoaded', function() {
         znr.style.display = 'block';
 
     });
-
-
+    var formPrograma6 = document.getElementById('formPrograma6');
+    formPrograma6.addEventListener('submit', function(event){
+        event.preventDefault();
+        var base = parseFloat(document.getElementById('baseTriangulo').value);
+        var altura = parseFloat(document.getElementById('alturaTriangulo').value);
+        var area = (base * altura)/2;
+        var perimetro = base * 3;
+        document.getElementById('areaTriangulo').textContent = 'El area del triangulo es: ' + area +
+         ' y su perimetro es: ' + perimetro;
+    });
+    var formPrograma7 = document.getElementById('formPrograma7');
+    formPrograma7.addEventListener('submit', function(event){
+        event.preventDefault();
+        var nombreDino = document.getElementById('nombreDino').value;
+        var pesoDinoL = parseFloat(document.getElementById('pesoDino').value);
+        var distDinoP = parseFloat(document.getElementById('distanciaDino').value);
+        let pesoDinoK = pesoDinoL / 2.20462;
+        let distDinoM = distDinoP / 3.28084;
+        document.getElementById('dinoCorregido').textContent = 'El dinosaurio ' + nombreDino + ' pesa: '
+         + pesoDinoK.toFixed(2) + ' kg y mide ' + distDinoM.toFixed(2) + ' metros de distancia';
+    });
+    let formPrograma8 = document.getElementById('formPrograma8');
+    formPrograma8.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let cantidadGalones = document.getElementById('cantidadGalones').value;
+        let cantidadLitros = cantidadGalones * 3.78541;
+        let precio = cantidadLitros * 22;
+        document.getElementById('precioGasolina').textContent = 'La cantidad de litros es: ' 
+        + cantidadLitros.toFixed(2) + ' y el precio a pagar es: $' + precio.toFixed(2);
+    })
 });
