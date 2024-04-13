@@ -107,49 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
         segundos = numDias * 86400;
         document.getElementById('cantSegundos').textContent = 'La cantidad de segundos en ' + numDias + ' dias es: ' + segundos;
     });
-    // Programa 11 = programa que calcula el area de un triangulo en base a sus lados
-    let formPrograma11 = document.getElementById('formPrograma11');
-    formPrograma11.addEventListener('submit', function(event) {
-        event.preventDefault();
-        let lado1 = document.getElementById('Lado1').value;
-        let lado2 = document.getElementById('Lado2').value;
-        let lado3 = document.getElementById('Lado3').value;
-        let s = (parseFloat(lado1) + parseFloat(lado2) + parseFloat(lado3)) / 2;
-        let area = Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
-        document.getElementById('area').textContent = 'El area del triangulo es: ' + area.toFixed(2);
-    });
-    // Programa 12 = Programa que calcula la distancia entre dos puntos (x1, y1) y (x2, y2)
-    let formPrograma12 = document.getElementById('formPrograma12');
-    formPrograma12.addEventListener('submit', function(event) {
-        event.preventDefault();
-        let x1 = document.getElementById('x1').value;
-        let y1 = document.getElementById('y1').value;
-        let x2 = document.getElementById('x2').value;
-        let y2 = document.getElementById('y2').value;
-        let distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
-        document.getElementById('distancia').textContent = 'La distancia entre los dos puntos es: ' + distancia.toFixed(2);
-    });
-    // Programa 13 = Programa que calcula el area y perimetro de un circulo
-    let formPrograma13 = document.getElementById('formPrograma13');
-    formPrograma13.addEventListener('submit', function(event) {
-        event.preventDefault();
-        let radio = document.getElementById('radioCirculo').value;
-        let area = Math.PI * Math.pow(radio, 2);
-        let perimetro = 2 * Math.PI * radio;
-        document.getElementById('areaCirculo').textContent = 'El area del circulo es: ' + area.toFixed(2) + ' y su perimetro es: ' + perimetro.toFixed(2);
-    });
-    // Programa 14 = Programa que muestra si aprobaste si tu calificacion es mas de 7
-    let formPrograma14 = document.getElementById('formPrograma14');
-    formPrograma14.addEventListener('submit', function(event) {
-        event.preventDefault();
-        let calificacion = document.getElementById('calificacion').value;
-        if (calificacion >= 8) {
-            document.getElementById('aprobado').textContent = 'Aprobaste';
-        } else {
-            document.getElementById('aprobado').textContent = 'Reprobaste';
-        }
-    });
-
-
-
 });

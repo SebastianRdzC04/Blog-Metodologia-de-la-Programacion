@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Metodologia de la programacion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#programa1">Programa 1</a></li>
+                <li><a href="#programa2">Programa 2</a></li>
+                <li><a href="#programa3">Programa 3</a></li>
+                <li><a href="#programa4">Programa 4</a></li>
+                <li><a href="#programa5">Programa 5</a></li>
+                <li><a href="#programa6">Programa 6</a></li>
+                <li><a href="#programa7">Programa 7</a></li>
+                <li><a href="#programa8">Programa 8</a></li>
+                <li><a href="#programa9">Programa 9</a></li>
+                <li><a href="#programa10">Programa 10</a></li>
+    </header>
+    <main>
+        <article id="Programa1" class="programa">
+            <h2>Programa 1 (Operacion Random que se le ocurrio al profe)</h2>
+            <p>Este programa realizara una operacion en base datos <br>
+            ingresador por el usuario</p>
+            <p>El usuario ingresara los valores A y B</p>
+            <p>La operacion realizada por el programa sera (A + B) ** 2/3</p>
+            <h4>Diagrama de flujo</h4>
+            <img id="diagrama1" src="../imagenes/Diagrama1.png" alt="diagrama de flujo 1" class="diagramas">
+            <form id="formPrograma1">
+                <label for="valorA">Valor A:</label>
+                <input type="number" id="valorA" name="valorA" required>
+                <label for="valorB">Valor B:</label>
+                <input type="number" id="valorB" name="valorB" required>
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="respuestaPrograma1"></p>
+        </article>
+        <article id="programa2" class="programa">
+            <h2>Programa 2 (Promedio)</h2>
+            <p>Este programa calcula el promedio en base a 5 calificaciones introducidas <br>
+            por el usuario</p>
+            <p>El usuario ingresara los valores de Cali1, Cali2, Cali3, Cali4, Cali5</p>
+            <p>La operacion realizada por el programa sera <br>
+                 (Cali1 + Cali2 + Cali3 + Cali4 + Cali5) / 5</p>
+            <h4>Diagrama de flujo</h4>
+            <img id="diagrama2" src="../imagenes/Diagrama2.png" alt="diagrama de flujo 2" class="diagramas">
+            <form id="formPrograma2">
+                <label for="Cali1">Cali1:</label>
+                <input type="number" name="Cali1" id="Cali1">
+                <label for="Cali2">Cali2:</label>
+                <input type="number" name="Cali2" id="Cali2">
+                <label for="Cali3">Cali3:</label>
+                <input type="number" name="Cali3" id="Cali3">
+                <label for="Cali4">Cali4:</label>
+                <input type="number" name="Cali4" id="Cali4">
+                <label for="Cali5">Cali5:</label>
+                <input type="number" name="Cali5" id="Cali5">
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="respuestaPrograma2"></p>
+
+        </article>
+        <article id="programa3" class="programa">
+            <h2>Programa 3 (Elevar numero al cuadrado y cubo)</h2>
+            <p>Este programa calcula el cuadrado y el cubo de un numero introducido <br>
+            por el usuario</p>
+            <p>El usuario ingresara un numero</p>
+            <p>La operacion realizada por el programa sera <br>
+                 N ^ 2 & N ^ 3</p>
+            <h4>Diagrama de flujo</h4>
+            <img id="diagrama3" src="../imagenes/Diagrama3.png" alt="diagrama de flujo 3" class="diagramas">
+            <form id="formPrograma3">
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero" id="numero">
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="respuestaPrograma3"></p>
+        </article>
+        <article id="programa4" class="programa">
+            <h2>Programa 4 (Feria)</h2>
+            <p>Este programa calcula la feria en base a un monto entregado por el cliente y el precio de un producto dados <br>
+            por el usuario</p>
+            <p>El usuario ingresara el valor del producto y el monto entregado</p>
+            <p>La operacion realizada por el programa sera <br>
+                 Monto entregado - Precio producto</p>
+            <h4>Diagrama de flujo</h4>
+            <img id="diagrama4" src="../imagenes/Diagrama4.png" alt="diagrama de flujo 4" class="diagramas">
+            <form id="formPrograma4">
+                <label for="precioProducto">Precio producto:</label>
+                <input type="number" name="precioProducto" id="precioProducto">
+                <label for="montoEntregado">Monto entregado:</label>
+                <input type="number" name="montoEntregado" id="montoEntregado">
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="respuestaPrograma4"></p>
+        </article>
+        <article id="programa5" class="programa">
+            <div id="zonaprograma">
+                <h2>Programa 5 (Base y perimetro de un rectangulo)</h2>
+                <p>Este programa calcula el area y perimetro de un rectangulo en base a las medidas dadas <br>
+                 por el usuario</p>
+                <p>El usuario ingresara la base y la altura del rectangulo</p>
+                <p>La operacion realizada por el programa sera <br>
+                 Area = B * H <br>
+                 Perimetro = (B * 2) + (H * 2)</p>
+                <h4>Diagrama de flujo</h4>
+                <img id="diagrama5" src="../imagenes/Diagrama5.png" alt="diagrama de flujo 5" class="diagramas">
+                <form id="formPrograma5">
+                <label for="base">Base:</label>
+                <input type="number" name="base" id="base">
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura" id="altura">
+                <button type="submit">Calcular</button>
+            </form>
+            </div> 
+            <div id="zonarectangulo">
+                <div id="znr"></div>
+            </div>
+            <p id="respuestaPrograma5"></p>
+        </article>
+        <article id="programa6" class = "programa">
+            <div id="cuerpoPrograma">
+                <h2>Programa 6 (Perimetro y Area de un triangulo)</h2>
+                <p>Este programa calcula el area y el perimetro de un triangulo recangulo dado el base <br>
+                y la altura por el usuario</p>
+                <p>La operacion realizada por el programa sera <br>
+                Area = B x H / 2 <br>
+                Perimetro = B + B + B</p>
+                <h4>Diagrama de flujo</h4>
+                <img id="diagrama6" src="../imagenes/Diagrama6.png" alt="diagrama de flujo 6" class="diagramas">
+                <form id="formPrograma6">
+                    <label for="baseTriangulo">Base:</label>
+                    <input type="number" name="baseTriangulo" id="baseTriangulo">
+                    <label for="alturaTriangulo">Altura:</label>
+                    <input type="number" name="alturaTriangulo" id="alturaTriangulo">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma6">
+                <div id="areaTriangulo"></div>
+                <div id="dibujoTriangulo"></div>
+            </div>
+        </article>
+        <article id="programa7" class="programa">
+            <div class="cuerpoPrograma">
+                <h2> Programa 7 (Dinosaurios)</h2>
+                <p>Este programa recibira los datos (Nombre, peso en libras, distancia en pies) introducidos por el usuario
+                    y el programa calculara el peso en kilogramos y la distancia en metros</p>
+                <p>La operacion realizada por el programa sera <br>
+                    Peso en kilogramos = Peso en libras / 2.2046 <br>
+                    Distancia en metros = Distancia en pies / 3.2808</p>
+                <h4>Diagrama de flujo</h4>
+                <img id="diagrama7" src="../imagenes/Diagrama7.png" alt="diagrama de flujo 7" class="diagramas">
+                <form id="formPrograma7">
+                    <label for="nombreDino">Nombre:</label>
+                    <input type="text" name="nombreDino" id="nombreDino">
+                    <label for="pesoDino">Peso en libras:</label>
+                    <input type="number" name="pesoDino" id="pesoDino">
+                    <label for="distanciaDino">Distancia en pies:</label>
+                    <input type="number" name="distanciaDino" id="distanciaDino">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma7">
+                <div id="dinoCorregido"></div>
+            </div>
+        </article>
+        <article id="programa8" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 8 (gasolinas)</h2>
+                <p>Una gasolinera tiene un problema en el que ellos ingresan la cantidad de gasolina en 
+                    galones pero el precio de la gasolina esta fijado en litros, resuelte su problema </p>
+                <p>La operacion realizada por el programa sera <br>
+                    cantidad en litros = cantidad en galones * 3.7854
+                    precio = cantidad en litros * 22
+                </p>
+                <h4>Diagrama de flujo</h4>
+                <img  id="diagrama8" src="../imagenes/Diagrama8.png" alt="diagrama de flujo 8" class="diagramas">
+                <form id="formPrograma8">
+                    <label for="cantidadGalones">Cantidad en galones:</label>
+                    <input type="number" name="cantidadGalones" id="cantidadGalones">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma8">
+                <div id="precioGasolina"></div>
+            </div>
+        </article>
+        <article id="programa9" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 9 (Volumen de un Cilinro)</h2>
+                <p>Programa que calcula el volumen de un cilindro dados el radio y la altura <br>
+                El usuario tiene que otorgar el valor del radio y la altura</p>
+                <p>La operacion realizada por el programa sera <br>
+                 Pi * r^2 * H
+                </p>
+                <h4>Diagrama de flujo</h4>
+                <img id="diagrama9" src="../imagenes/Diagrama9.png" alt="Diagrama de flujo 9" class="diagramas">
+                <form id="formPrograma9">
+                    <label for="valorRadio">Radio: </label>
+                    <input type="number" name="valorRadio" id="valorRadio">
+                    <label for="valorAltura">Altura: </label>
+                    <input type="number" name="valorAltura" id="valorAltura">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma9">
+                <div id="volumen"></div>
+            </div>
+        </article>
+        <article id="programa10" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 10 (segundos de dias)</h2>
+                <p>Programa que dado un numero determinado de dias otorgue la cantidad <br>
+                de segundos
+                </p>
+                <p>La operacion realizada sera: <br>
+                segs = dias * 86400</p>
+                <h4>Diagrama de flujo</h4>
+                <img id="diagrama10" src="../imagenes/Diagrama10.png" alt="diagrama de flujo 10" class="diagramas">
+                <form id="formPrograma10">
+                    <label for="numDias">Cantidad de dias: </label>
+                    <input type="number" name="numDias" id="numDias">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma10">
+                <div id="cantSegundos"></div>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/script_pagina1.js"></script>
+</body>
+</html>

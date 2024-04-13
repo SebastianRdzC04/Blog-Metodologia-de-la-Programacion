@@ -9,7 +9,7 @@
 .programa {
     border: 1px solid #000;
 }
-#pagina1 {
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto 1fr;
