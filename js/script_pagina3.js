@@ -87,6 +87,38 @@ document.addEventListener('DOMContentLoaded', function() {
             monto = monto * 0.75;
             document.getElementById('montoFinal').textContent = 'El precio con descuento es: $' + monto.toFixed(2);
         }
+    }); 
+    /*Programa que calcula un impuesto, los primeros 20 pesos no causan impuestos, los siguientes 20 pesos
+    tienen el 30% de impuesto y el resto 40% de impuesto, pero si el costo del producto es mayor a $500,
+    se hace el 50%*/
+    let formPrograma27 = document.getElementById('formPrograma27');
+    formPrograma27.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let costo = document.getElementById('precio').value;
+        let impuesto = 0;
+        if (costo <= 20) {
+            impuesto = 0;
+        } else if (costo > 20 && costo <= 40) {
+            impuesto = costo * 0.3;
+        } else if (costo > 40 && costo <= 500) {
+            impuesto = costo * 0.4;
+        } else {
+            impuesto = costo * 0.5;
+        }
+        document.getElementById('impuesto').textContent = 'El impuesto es: $' + impuesto.toFixed(2);
+    });
+    // Programa 28 = Programa que calcula si un numero es par o impar
+    let formPrograma28 = document.getElementById('formPrograma28');
+    formPrograma28.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let numero = document.getElementById('numeroP').value;
+        console.log(numero);
+        console.log(numero % 2);
+        if (numero % 2 == 0) {
+            document.getElementById('estadoP').textContent = 'Par';
+        } else {
+            document.getElementById('estadoP').textContent = 'Impar';
+        }
     });
 
 });
