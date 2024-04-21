@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina4</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Metodologia de la Programacion</h1>
+        <h2>Pagina 4</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#programa31">Programas 31</a></li>
+                <li><a href="#programa32">Programas 32</a></li>
+                <li><a href="#programa33">Programas 33</a></li>
+                <li><a href="#programa34">Programas 34</a></li>
+                <li><a href="#programa35">Programas 35</a></li>
+                <li><a href="#programa36">Programas 36</a></li>
+                <li><a href="#programa37">Programas 37</a></li>
+                <li><a href="#programa38">Programas 38</a></li>
+                <li><a href="#programa39">Programas 39</a></li>
+                <li><a href="#programa40">Programas 40</a></li>
+
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="programa31" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 31</h2>
+                <p>Programa que dada la categoria de un trabajador y su sueldo <br>
+                calcule el aumento correspondiente teniendo en cuenta los siguientes datos</p>
+                <p>Categoria  //  Aumento  <br>
+                    1         //    15%    <br>
+                    2       //      10%     <br>
+                    3       //      8%      <br>
+                    4       //      7%      <br></p>
+                <p>El programa muestra unicamente el nuevo sueldo</p>
+                <p>El usuario debe introducir el sueldo y la categoria</p>
+                <p>El programa debe validar que la categoria sea un numero entre 1 y 4</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama31" src="../imagenes/Diagrama31.png" alt="diagrama de flujo 21" class="diagramas">
+                <form id="formPrograma31">
+                    <label for="sueldo">Sueldo</label>
+                    <input type="number" id="sueldo" name="sueldo" required>
+                    <label for="categoria">Categoria</label>
+                    <input type="number" id="categoria" name="categoria" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+                <div id="respuestaPrograma31">
+                    <p id="respuesta31"></p>
+                </div>
+        </article>
+        <article id="programa32" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa32</h2>
+                <p>El costo de llamadas internacionales dependen de la zona geografiva</p>
+                <p>en la que se encuentra el pais de destino y el numero de minutos hablados</p>
+                <p>A continuacion se muestra el costo del minuo por zona, a cada zona se le asocia una clave</p>
+                <p>Clave  //  Zona  //  Costo por minuto</p>
+                <p>12     //  America del Norte  //  2.00</p>
+                <p>15     //  America Central  //  2.50</p>
+                <p>18     //  America del Sur  //  4.00</p>
+                <p>19     //  Europa  //  3.50</p>
+                <p>23     //  Asia  //  6.00</p>
+                <p>25     //  Africa  //  6.50</p>
+                <p>29     //  Oceania  //  5</p>
+                <p>El programa debe calcular el costo total de la llamada</p>
+                <p>El usuario debe introducir la clave de la zona y el numero de minutos</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama32" src="../imagenes/Diagrama32.png" alt="diagrama de flujo 22" class="diagramas">
+                <form id="formPrograma32">
+                    <label for="clave">Clave</label>
+                    <input type="number" id="clave" name="clave" required>
+                    <label for="minutos">Minutos</label>
+                    <input type="number" id="minutos" name="minutos" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma32">
+                <p id="respuesta32"></p>
+        </article>
+        <article id="programa33" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 33</h2>
+                <p>Programa que permite calcular que hau que pagarle a un trabajador teniendo en cuenta sus sueldos
+                    y horas extra trabajadas para el pago de horas extra se toma en cuenta la siguiente informacion
+                </p>
+                <p>Precio hora Extra  //  Categoria</p>
+                <p>30.00  //  1</p>
+                <p>38.00  //  2</p>
+                <p>50.00  //  3</p>
+                <p>70.00  //  4</p>
+                <p>El usuario debe introducir la categoria y las horas extra trabajadas</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama33" src="../imagenes/Diagrama33.png" alt="diagrama de flujo 23" class="diagramas">
+                <form id="formPrograma33">
+                    <label for="categoria33">Categoria</label>
+                    <input type="number" id="categoria33" name="categoria33" required>
+                    <label for="horas33">Horas Extra</label>
+                    <input type="number" id="horas33" name="horas33" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma33">
+                <p id="respuesta33"></p>
+            </div>
+        </article>
+        <article id="programa34" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 34</h2>
+                <p>Tal que dado la matricula de un alumno, la carrer en la que esta inscrito
+                    cuatrimeste y su promedio, tetermine si es apto para pertenecer a alguna
+                    de las carreras de UTT, de ser aceptado, imprimir carrera, matricula y la palabra "aceptado"
+                </p>
+                <p>Especificaciones para pertenecer a utt</p>
+                <p>Carrera  //  Promedio  //  Cuatrimestre</p>
+                <p>TICS  //  8.8  //  5</p>
+                <p>MECA  //  8.5  //  5</p>
+                <p>ADMIN  //  8.5  //  5</p>
+                <p>PROCESOS  //  8.5  //  5</p>
+                <p>El usuario debe introducir la matricula, la carrera, el cuatrimestre y el promedio</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama34" src="../imagenes/Diagrama34.png" alt="diagrama de flujo 24" class="diagramas">
+                <form id="formPrograma34">
+                    <label for="matricula34">Matricula</label>
+                    <input type="text" id="matricula34" name="matricula34" required>
+                    <label for="carrera34">Carrera</label>
+                    <input type="text" id="carrera34" name="carrera34" required>
+                    <label for="cuatrimestre34">Cuatrimestre</label>
+                    <input type="number" id="cuatrimestre34" name="cuatrimestre34" required>
+                    <label for="promedio34">Promedio</label>
+                    <input type="number" id="promedio34" name="promedio34" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma34">
+                <p id="respuesta34"></p>
+            </div>
+        </article>
+        <article id="programa35" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 35</h2>
+                <p>En un hospital se le ha hecho un estudio sobre pacientes registrados durante los ultimos 10 años
+                    con el objetivo de hacer una aproximacion de los costos de interaccion por paciente,
+                    segun el tipo de enfermedades que el paciente
+                </p>
+                <p>Tipo de enfermedad     //     Costo * Dia </p>
+                <p>1     //     25.00</p>
+                <p>2     //     16.00</p>
+                <p>3     //     20.00</p>
+                <p>4     //     32</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama35" src="../imagenes/Diagrama35.png" alt="diagrama de flujo 25" class="diagramas">
+                <form id="formPrograma35">
+                    <label for="enfermedad35">Enfermedad</label>
+                    <input type="number" id="enfermedad35" name="enfermedad35" required>
+                    <label for="dias35">Dias</label>
+                    <input type="number" id="dias35" name="dias35" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma35">
+                <p id="respuesta35"></p>
+            </div>
+        </article>
+        <article id="programa36" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 36</h2>
+                <p>Programa tal que dado como dato una termperatura en grados determine el deporte que esa propiedad</p>
+                <p>Deporte   //   Temperatura</p>
+                <p>Natacion   //   >85</p>
+                <p>Tenis  //  70&lt; tem &lt;= 85</p>
+                <p>Golf  //  32 &lt; tem &lt;= 70</p>
+                <p>Esqui  //  10 &lt; tem &lt;= 32</p>
+                <p>Marcha  //  &lt;=10</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama36" src="../imagenes/Diagrama36.png" alt="diagrama de flujo 26" class="diagramas">
+                <form id="formPrograma36">
+                    <label for="temperatura36">Temperatura</label>
+                    <input type="number" id="temperatura36" name="temperatura36" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma36">
+                <div id="respuesta36"></div>
+            </div>
+        </article>
+        <article id="programa37" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 37</h2>
+                <p>Construye un diagrama de flujo tal que dado el sueldo de 10 trabajadores
+                    de una empresa obtenga el total de nomina, concidere a demas que no puede utilizar
+                    estructuras algoritmicas repetiticas para el caso 1, caso 2 si utilizarlas.
+                </p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama37" src="../imagenes/Diagrama37.png" alt="diagrama de flujo 27" class="diagramas">
+                <form id="formPrograma37">
+                    <label for="sueldo1">Sueldo 1</label>
+                    <input type="number" name="sueldo1" id="sueldo1">
+                    <label for="sueldo2">Sueldo 2</label>
+                    <input type="number" name="sueldo2" id="sueldo2">
+                    <label for="sueldo3">Sueldo 3</label>
+                    <input type="number" name="sueldo3" id="sueldo3">
+                    <label for="sueldo4">Sueldo 4</label>
+                    <input type="number" name="sueldo4" id="sueldo4">
+                    <label for="sueldo5">Sueldo 5</label>
+                    <input type="number" name="sueldo5" id="sueldo5">
+                    <label for="sueldo6">Sueldo 6</label>
+                    <input type="number" name="sueldo6" id="sueldo6">
+                    <label for="sueldo7">Sueldo 7</label>
+                    <input type="number" name="sueldo7" id="sueldo7">
+                    <label for="sueldo8">Sueldo 8</label>
+                    <input type="number" name="sueldo8" id="sueldo8">
+                    <label for="sueldo9">Sueldo 9</label>
+                    <input type="number" name="sueldo9" id="sueldo9">
+                    <label for="sueldo10">Sueldo 10</label>
+                    <input type="number" name="sueldo10" id="sueldo10">
+                    <button type="submit">Calcular</button>
+                </form>
+                <form id="formPrograma37-2">
+                    <label for="sueldo-2">Sueldo</label>
+                    <input type="number" name="sueldo-2" id="sueldo-2">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma37">
+                <div id="respuesta37"></div>
+                <div id="respuesta37-2"></div> 
+            </div>
+        </article>
+        <article id="programa38" class="programa">
+            <div class="cuerpoPrograma" id="cuerpoPrograma38">
+                <h2>Programa 38</h2>
+                <p>Construya un diagrama de flujo tal que dado numeros enteros
+                    obtenga el numero de 0 que hay entre esos numeros
+                </p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama38" src="../imagenes/Diagrama38.png" alt="diagrama de flujo 28" class="diagramas">
+                <input type="reset" value="Reiniciar" id="botonReiniciar38">
+                <form id="formPrograma38">
+                    <label for="ciclos38">Ciclos</label>
+                    <input type="number" name="ciclos38" id="ciclos38">
+                    <button type="submit">Calcular</button>
+                </form>
+                </form>
+            </div>
+            <div id="respuestaPrograma38">
+                <div id="respuesta38"></div>
+            </div>
+        </article>
+        <article id="programa39" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 39</h2>
+                <p>Programa tal que dado 270 numeros enteros obtenga la suma de los impares y el promedio de los pares
+                </p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama39" src="../imagenes/Diagrama39.png" alt="diagrama de flujo 29" class="diagramas">
+                <input type="reset" value="Reiniciar" id="botonReiniciar39">
+                <form id="formPrograma39">
+                    <label for="numero39">Numero</label>
+                    <input type="number" name="numero39" id="numero39">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma39">
+                <div id="respuesta39"></div>
+            </div>
+        </article>
+        <article id="programa40" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa 40</h2>
+                <p>Escriba un diagrama de flujo que lea un numero entero n y calcule el resultado de la siguiente</p>
+                <p>1 - (1/2) + (1/3) - (1/4) + ...... +- (1/n)</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama40" src="../imagenes/Diagrama40.png" alt="diagrama de flujo 30" class="diagramas">
+                <input type="reset" value="Reiniciar" id="botonReiniciar40">
+                <form id="formPrograma40">
+                    <label for="numero40">Numero</label>
+                    <input type="number" name="numero40" id="numero40">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma40">
+                <div id="respuesta40"></div>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/script_pagina4.js"></script>
+</body>
+</html>

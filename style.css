@@ -23,6 +23,18 @@ main {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
 }
+#examenProgra {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+.cuerpoPrograma {
+    position: relative;
+}
+
 
 #programa6 {
     grid-column: 1 / -1;

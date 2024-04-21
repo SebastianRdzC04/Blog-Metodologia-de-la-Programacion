@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina 3</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-
+        <h1>Metodologia de la Programacion</h1>
+        <h2>Pagina 3</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#programa21">Programas 21</a></li>
+                <li><a href="#programa22">Programas 22</a></li>
+                <li><a href="#programa23">Programas 23</a></li>
+                <li><a href="#programa34">Programas 24</a></li>
+                <li><a href="#programa25">Programas 25</a></li>
+                <li><a href="#programa26">Programas 26</a></li>
+                <li><a href="#programa27">Programas 27</a></li>
+                <li><a href="#programa28">Programas 28</a></li>
+                <li><a href="#programa29">Programas 29</a></li>
+                <li><a href="#programa30">Programas 30</a></li>
+                
+            </ul>
+        </nav>
     </header>
     <main>
         <article id="programa21" class="programa">
@@ -162,6 +179,50 @@
             <div id="respuestaPrograma28">
                 <div id="estadoP"></div>
             </div>
+        </article>
+        <article id="programa29" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa29</h2>
+                <p>Una tienda efectua un descuento a los clientes dependiendo del monto de la cuenta</p>
+                <p>Si el monto es menor que $500, no hay descuento</p>
+                <p>Si el monto esta entre $700 y $1000, descuento del 7%</p>
+                <p>Si el monto esta entre $1000 y $9000, descuento del 12%</p>
+                <p>Superior a $9000, 30%</p>
+                <p>El usuario tendra que ingresar el monto de la cuenta</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama29" src="../imagenes/Diagrama29.png" alt="diagrama de flujo 29" class="diagramas">
+                <form id="formPrograma29">
+                    <label for="montoC">Monto: </label>
+                    <input type="number" name="montoC" id="montoC">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+            <div id="respuestaPrograma29">
+                <div id="montoFinalC"></div>
+            </div>
+        </article>
+        <article id="programa30" class="programa">
+            <div class="cuerpoPrograma">
+                <h2>Programa30</h2>
+                <p>Programa que obtiene el resultado haciendo las operaciones de la siguiente tabla</p>
+                <p>val = 100*v si num 1 <br>
+                100 ** v si num 2 <br>
+                100/v si num 3 <br>
+                0 si num es 4</p>
+                <p>El usuario tendra que ingresar los numeros</p>
+                <h4>Diagrama de Flujo</h4>
+                <img id="diagrama30" src="../imagenes/Diagrama30.png" alt="diagrama de flujo 30" class="diagramas">
+                <form id="formPrograma30">
+                    <label for="valor">Valor: </label>
+                    <input type="number" name="valor" id="valor">
+                    <label for="oP">Operacion: </label>
+                    <input type="number" name="oP" id="oP">
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+                <div id="respuestaPrograma30">
+                    <div id="resultado"></div>
+                </div>
         </article>
     </main>
     <footer>

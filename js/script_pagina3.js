@@ -113,12 +113,55 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         let numero = document.getElementById('numeroP').value;
         console.log(numero);
-        console.log(numero % 2);
+        console.log(numero   % 2);
         if (numero % 2 == 0) {
             document.getElementById('estadoP').textContent = 'Par';
         } else {
             document.getElementById('estadoP').textContent = 'Impar';
         }
     });
+    /**Programa 29 = Una tienda efectua un descuento a los clientes dependiendo del monto de la cuenta
+     * si el monto esta entre 700 y 1000 descuento del 7%, si el monto esta entre 1000 y 9000 descuento del 12%
+     * superior a 9000 descuento del 30
+     * el usuario tendra que ingresar el monto de la cuenta
+     */
+    let formPrograma29 = document.getElementById('formPrograma29');
+    formPrograma29.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let monto = document.getElementById('montoC').value;
+        if (monto >= 700 && monto < 1000) {
+            monto = monto * 0.93;
+            document.getElementById('montoFinalC').textContent = 'El monto con descuento es: $' + monto.toFixed(2);
+        } else if (monto >= 1000 && monto < 9000) {
+            monto = monto * 0.88;
+            document.getElementById('montoFinalC').textContent = 'El monto con descuento es: $' + monto.toFixed(2);
+        } else {
+            monto = monto * 0.7;
+            document.getElementById('montoFinalC').textContent = 'El monto con descuento es: $' + monto.toFixed(2);
+        }
+    });
+    /**Programa 30 = Programa que obtiene el resultado haciendo las operaciones de la siguiente tabla
+     * val = 100 * V si num 1
+     * val = 100 ** V si num 2
+     * val = 100 / V si num 3
+     * val = 0 si num 4
+     * el usuario tendra que ingresar el valor de v y el numero de la operacion
+     */
+    let formPrograma30 = document.getElementById('formPrograma30');
+    formPrograma30.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let v = document.getElementById('valor').value;
+        let num = document.getElementById('oP').value;
+        let val = 0;
+        if (num == 1) {
+            val = 100 * v;
+        } else if (num == 2) {
+            val = 100 ** v;
+        } else if (num == 3) {
+            val = 100 / v;
+        }
+        document.getElementById('resultado').textContent = 'El resultado es: ' + val;
+    });
+
 
 });
