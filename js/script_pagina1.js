@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //Programa 1 = Programa que mediante un numero introducido por el usuario,
+    //hace una operacion ya establecida
     var formPrograma1 = document.getElementById('formPrograma1');
     formPrograma1.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -9,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('respuestaPrograma1').textContent = 'El resultado es: ' + resultado;
     });
-
+    /**Programa 2 = Programa que en base a 5 calificaciones introducidas calcule
+     * el promedio de las mismas
+     */
     var formPrograma2 = document.getElementById('formPrograma2');
     formPrograma2.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -24,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.getElementById('respuestaPrograma2').textContent = 'El promedio es: ' + resultado;
     });
+    /**Programa 3 = Programa que muestra el cuadrado y el cubo de un numero
+     * introducido por el usuario
+     */
     var formPrograma3 = document.getElementById('formPrograma3');
     formPrograma3.addEventListener('submit', function(event){
         event.preventDefault();
@@ -35,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         ' es: ' + resultado + ' y su cubo es: ' + resultado2;
 
     });
+    /**Programa 4 = Programa que calcula la feria en base al monto y el dinero
+     * entregado por el usuario
+     */
     var formPrograma4 = document.getElementById('formPrograma4');
     formPrograma4.addEventListener('submit', function(event){
         event.preventDefault();
@@ -43,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultado = monto - precio;
         document.getElementById('respuestaPrograma4').textContent = 'El cambio a entregar es: ' + resultado;
     });
+    /**Programa 5 = Programa que calcula el area y perimetro de un rectangulo*/
     var formPrograma5 = document.getElementById('formPrograma5');
     formPrograma5.addEventListener('submit', function(event){
         event.preventDefault();
@@ -58,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         znr.style.display = 'block';
 
     });
+    /**Programa 6 = Programa que calcula el area y perimetro de un triangulo*/
     var formPrograma6 = document.getElementById('formPrograma6');
     formPrograma6.addEventListener('submit', function(event){
         event.preventDefault();
@@ -68,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('areaTriangulo').textContent = 'El area del triangulo es: ' + area +
          ' y su perimetro es: ' + perimetro;
     });
-
+    // Programa 7 = programa que convierte libras a kilogramos y pies a metros
     var formPrograma7 = document.getElementById('formPrograma7');
     formPrograma7.addEventListener('submit', function(event){
         event.preventDefault();

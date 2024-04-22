@@ -1,11 +1,16 @@
 .diagramas {
-    width: 200px;
+    width: 300px;
 }
 #diagrama1 {
     width: 200px;
     border: 1px solid #000;
     
 }
+img {
+    position: relative;
+}
+
+
 .programa {
     border: 1px solid #000;
 }
@@ -23,17 +28,8 @@ main {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
 }
-#examenProgra {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: 10px;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-}
-.cuerpoPrograma {
-    position: relative;
-}
+
+
 
 
 #programa6 {
@@ -58,8 +54,8 @@ article #zonarectangulo {
     margin-top: 150px;
     margin-right: 0;
     
-
-
+    
+    
 }
 #znr {
     border: 2px solid #000;
@@ -68,5 +64,43 @@ article #zonarectangulo {
     max-width: 100%;
     max-height: 100%;
     display: none;
+    
+}
+#indice ul {
+    padding: 50px;
+    list-style: none;
+}
+
+#indice li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre cada par de enlace-descripción */
+}
+
+#indice a {
+    text-decoration: none;
+    color: #f00;
+    font-size: 30px;
+}
+
+#indice p {
+    margin-top: 10px; /* Espacio entre el enlace y la descripción */
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0;
 
 }
+.codigos {
+    width: 300px;
+}
+.zonaImagenes {
+    position: relative;
+    width: 800px;
+    height: 380px;
+}
+
+

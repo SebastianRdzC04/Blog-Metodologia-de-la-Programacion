@@ -88,7 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
     formPrograma33.addEventListener('submit', function(event) {
         event.preventDefault();
         let horas = document.getElementById('horas33').value;
+        document.getElementById('horas33').value = '';
         let categoria = document.getElementById('categoria33').value;
+        document.getElementById('categoria33').value = '';
         switch (categoria) {
             case '1':
                 horas = horas * 30;
@@ -121,29 +123,37 @@ document.addEventListener('DOMContentLoaded', function() {
     formPrograma34.addEventListener('submit', function(event) {
         event.preventDefault();
         let matricula = document.getElementById('matricula34').value;
+        document.getElementById('matricula34').value = '';
         let carrera = document.getElementById('carrera34').value;
+        document.getElementById('carrera34').value = '';
         let cuatrimestre = document.getElementById('cuatrimestre34').value;
+        document.getElementById('cuatrimestre34').value = '';
         let promedio = document.getElementById('promedio34').value;
+        document.getElementById('promedio34').value = '';
         let aceptado = 'No aceptado';
         switch (carrera) {
-            case 'TICS':
-                if (promedio >= 8.8 && cuatrimestre == 5) {
+            case '1':
+                if (promedio >= 8.8 && cuatrimestre >= 5) {
                     aceptado = 'Aceptado';
+                    carrera = 'TICS';
                 }
                 break;
-            case 'MECA':
-                if (promedio >= 8.5 && cuatrimestre == 5) {
+            case '2':
+                if (promedio >= 8.5 && cuatrimestre >= 5) {
                     aceptado = 'Aceptado';
+                    carrera = 'MECA';
                 }
                 break;
-            case 'ADMIN':
-                if (promedio >= 8.5 && cuatrimestre == 5) {
+            case '3':
+                if (promedio >= 8.5 && cuatrimestre >= 5) {
                     aceptado = 'Aceptado';
+                    carrera = 'ADMIN';
                 }
                 break;
-            case 'PROCESOS':
-                if (promedio >= 8.5 && cuatrimestre == 5) {
+            case '4':
+                if (promedio >= 8.5 && cuatrimestre >= 5) {
                     aceptado = 'Aceptado';
+                    carrera = 'PROCESOS';
                 }
                 break;
             default:

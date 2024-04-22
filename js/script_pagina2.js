@@ -107,6 +107,24 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('resultado').textContent = 'El resultado de la division es: ' + resultado.toFixed(2);
         }
     });
+    /**Programa 20 = Programa que calcula el impuesto de un trabajador
+     * si su sueldo es mayor o igual a 500, aplica un iva del 16%
+     * en caso contrario su sueldo queda intacto
+     */
+    let formPrograma20 = document.getElementById('formPrograma20');
+    formPrograma20.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let sueldo = document.getElementById('sueldo20').value;
+        console.log(sueldo);
+        if (sueldo >= 500) {
+            let impuesto = sueldo * 0.16;
+            document.getElementById('sueldoFinal').textContent = 'Tu sueldo con impuestos es: ' + (sueldo - impuesto);
+        } 
+        else {
+            document.getElementById('sueldoFinal').textContent = 'Tu sueldo es: ' + sueldo;
+        }
+    });
+
 
 
 
